@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" CodeBehind="Master.aspx.cs" Inherits="MedicalOfficeWeb.Master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    
+    <title>Medical Office</title>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+           
+    <link rel="stylesheet" href="css/uikit.css"/>
+    <link rel="stylesheet" href="Content/bootstrap.css"/>
+    
+    <script src="js/uikit.js"></script>
+    <script src="js/uikit-icons.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/jquery-3.0.0.js"></script>
+
+</head>
+
+<body style="background-color: whitesmoke">
+
+
+<form id="form1" runat="server">
+    <div>
+            
+        <nav class="navbarnavbar-light bg-light">
+            <div class="container">
+                <img src="https://www.pinclipart.com/picdir/big/50-501212_tardis-clip-art.png" style=" height: 99px; width: 109px;"/>
+
+                <div class=" d-flex flex-row-reverse navbar-light bg-light" style="color: white">
+                    <ul class="navbar-nav">
+                        <li class="p-4 bd-highlight"> <button type="button" class="btn btn-outline-dark">Home</button></li>
+                        <li class="p-1 bd-highlight"><a href="Patients.aspx">Patients</a></li>
+                        <li class="p-1 bd-highlight"><a href="Appointments.aspx">Appointments</a></li>
+                        <li class="p-1 bd-highlight"><a href="Visits.aspx">Visits</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+        </asp:ContentPlaceHolder>
+
+    </div>
+</form>
+</body>
+</html>
